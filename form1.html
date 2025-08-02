@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>30 ปี วิทยาการคอมพิวเตอร์</title>
+    <style>
+        .box{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 24px;
+            background-color: white;
+            border-radius: 0.3;
+            margin-top:3rem;
+            margin-bottom:1.5rem;
+            width:70%;
+        }
+    </style>
+</head>
+<body class="bg-green-100 font-sans-serif">
+
+    <div class="box">
+        <h1 class="text-2xl font-bold mb-6 mt-6 text-center">ร้านของที่ระลึก 30 ปี สาขาวิทยาการคอมพิวเตอร์</h1>
+
+        <form action="" method="get" class="space-y-5">
+
+            <div>
+                <label for="names" class="block font-medium">ชื่อ-นามสกุล</label>
+                <input type="text" name="names" id="names" class="w-full border p-2 rounded" placeholder="ชื่อ-นามสกุล">
+            </div>
+
+            <div>
+                <label for="address" class="block font-medium">ที่อยู่</label>
+                <textarea name="address" id="address" class="w-full border p-2 rounded" placeholder="โปรดใส่ที่อยู๋" rows="2" maxlength="3000"></textarea>
+            </div>
+
+            <div>
+                <label for="number" class="block font-medium">เบอร์โทรศัพท์</label>
+                <input type="text" name="number" id="number" class="w-full border p-2 rounded" placeholder="09x-xxxxxxx"> 
+            </div>
+
+            <div>
+                <label for="product" class="block font-medium">สินค้า</label>
+                <select name="product" id="product" class="w-full border p-2 rounded">
+                    <option value=""> เลือกสินค้า </option>
+                    <option value="เสื้อ">เสื้อ</option>
+                    <option value="กระเป๋า">กระเป๋า</option>
+                    <option value="แก้วน้ำ">แก้วน้ำ</option>
+                    <option value="หมวก">หมวก</option>
+                    <option value="ร่ม">ร่ม</option>
+                    <option value="เข็มกลัด">เข็มกลัด</option>
+                    <option value="สมุด">สมุด</option>
+                    <option value="ปากกา">ปากกา</option>
+                </select>
+                <textarea name="description" id="description" class="w-full border p-2 rounded" placeholder="ระบุรายละเอียดของสินค้าที่ต้องการ" maxlength="5000" rows="3" ></textarea>
+            </div>
+
+            <div>
+                <label  for="productimage" class="block font-medium">รูปถ่ายสลิป</label>
+                <input type="file" name="productimage" id="productimage" accept="image/*" class="w-full border p-2 rounded">
+            </div>
+
+            <div>
+                <label class="block font-medium p-2 rounded">วันที่ซื้อสินค้า</label>
+                <input type="date" name="buydate" id="buydate" class="w-full border p-2 rounded">
+            </div>
+
+            <div>
+                <label for="receiving" class="block font-medium">ช่องทางการจัดส่ง</label>
+                <select name="receiving" id="receiving" class="w-full border p-2 rounded">
+                    <option value=""> เลือกช่องทางการจัดส่ง </option>
+                    <option value="curry">Curry Xpress</option>
+                    <option value="thunder">Thunder Xpress</option>
+                    <option value="lasagna">Lasagna Xpress</option>
+                    <option value="chopper">Chopper Xpress</option>
+                    <option value="r&b">R&B Xpress</option>
+                    <option value="รับด้วยตัวเอง">เดินทางมารับเอง</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="payment" class="block font-medium">ช่องทางการชำระเงิน</label>
+                <select name="payment" id="payment" class="w-full border p-2 rounded">
+                    <option value=""> เลือกช่องทางการชำระเงิน </option>
+                    <option value="qrcode">QR code</option>
+                    <option value="krbank">Krungkring Bank</option>
+                    <option value="kbank">Kasiko Bank</option>
+                    <option value="scp">SCP Bank</option>
+                    <option value="credit">บัตรเครดิต</option>
+                    <option value="cash">เงินสด</option>
+                </select>
+            </div>
+
+            <div class="flex justify-end gap-4 mt-4 mr-4">
+                <button type="reset" class="p-2 rounded bg-red-600 text-white">ยกเลิก</button>
+                <button type="submit" class="p-2 rounded bg-green-700 text-white">ยืนยัน</button>
+            </div>
+
+        </from>
+    </div>
+</body>
+</html>
