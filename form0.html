@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>30 ปี วิทยาการคอมพิวเตอร์</title>
+    <link rel="icon" href="logo.png" type="image/png"/>
+    <style>
+        .box{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 24px;
+            background-color: white;
+            border-radius: 3;
+            margin-top:3rem;
+            margin-bottom:1.5rem;
+            width:70%;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-green-100 font-sans-serif">
+
+    <div class="box">
+        <h1 class="text-2xl font-bold mb-4 mt-4 text-center">ร้านของที่ระลึก 30 ปี สาขาวิทยาการคอมพิวเตอร์</h1>
+        <p class="text-gray-500 mb-4 text-center">สำหรับ Admin</p>
+        <p class="text-xl font-bold mb-4">Stock</p>
+        <form action="" method="get" class="space-y-5">
+
+            <div>
+                <label for="product" class="block font-medium">สินค้า</label>
+                <select name="product" id="product" class="w-full border p-2 rounded">
+                    <option value=""> เลือกสินค้า </option>
+                    <option value="เสื้อ">เสื้อ</option>
+                    <option value="กระเป๋า">กระเป๋า</option>
+                    <option value="แก้วน้ำ">แก้วน้ำ</option>
+                    <option value="หมวก">หมวก</option>
+                    <option value="ร่ม">ร่ม</option>
+                    <option value="เข็มกลัด">เข็มกลัด</option>
+                    <option value="สมุด">สมุด</option>
+                    <option value="ปากกา">ปากกา</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="size" class="block font-medium">ขนาด</label>
+                <select name="size" id="size" class="w-full border p-2 rounded">
+                    <option value=""> เลือกขนาด </option>
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="color" class="block font-medium">สี</label>
+                <select name="color" id="color" class="w-full border p-2 rounded">
+                    <option value=""> เลือกสี </option>
+                    <option value="white">ขาว</option>
+                    <option value="black">ดำ</option>
+                    <option value="gray">เทา</option>
+                    <option value="blue">น้ำเงิน</option>
+                    <option value="green">เขียว</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="price" class="block font-medium">ราคา (บาท)</label>
+                <input type="number" name="price" id="price" step="1.0" min="0" max="9999" value="0.00" class="w-full border p-2 rounded"> 
+            </div>
+
+            <div>
+                <label for="quantity class=block font-medium">จำนวนสินค้า</label>
+                <input type="number" name="quantity" id="quantity" class="w-full border p-2 rounded">
+            </div>
+
+            <div>
+                <label for="modelname" class="block font-medium">ชื่อรุ่น</label>
+                <input type="text" name="modelname" id="modelname" class="w-full border p-2 rounded" placeholder="ชื่อรุ่น">
+            </div>
+
+            <div>
+                <label for="description" class="block font-medium">รายละเอียด</label>
+                <textarea name="description" id="description" class="w-full border p-2 rounded" rows="5" placeholder="รายละเอียดสินค้า" maxlength="5000"></textarea>
+            </div>
+
+            <div>
+                <label class="block font-medium">วันที่จัดจำหน่าย</label>
+                <div class="flex gap-4">
+                <input type="date" name="startdate" id="startdate" class="w-full border p-2 rounded">
+                <input type="date" name="enddate" id="enddate" min="2025-7-1" max="2025-8-31" class="w-full border p-2 rounded">
+            </div>
+
+            <div>
+                <label  for="productimage" class="block font-medium">รูปภาพสินค้า</label>
+                <input type="file" name="productimage" id="productimage" accept="image/*" class="w-full border p-2 rounded">
+            </div>
+
+            <div class="flex justify-center gap-4 mt-4">
+                <button type="reset" class="p-2 rounded bg-green-200 text-black">ล้างข้อมูล</button>
+                <button type="submit" class="p-2 rounded bg-green-600 text-white">บันทึก</button>
+            </div>
+
+        </from>
+    </div>
 </body>
 </html>
